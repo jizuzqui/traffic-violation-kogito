@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: traffic-violation-application
+  labels:
+    app: traffic-violation-application
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kogito-dmn-project
+  template:
+    metadata:
+      labels:
+        app: traffic-violation-application
+    spec:
+      containers:
+      - name: traffic-violation-application
+        image: jizuzquiza/traffic-violation-kogito:1.0
+        ports:
+        - containerPort: 8080
