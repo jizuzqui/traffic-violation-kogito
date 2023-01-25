@@ -42,6 +42,31 @@
       <groupId>org.kie.kogito</groupId>
       <artifactId>kogito-quarkus-decisions</artifactId>
     </dependency>
+    
+    <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-quarkus-predictions</artifactId>
+    </dependency>
+    <!--
+    <dependency>
+        <groupId>org.kie.kogito</groupId>
+        <artifactId>kogito-addons-quarkus-events-predictions</artifactId>
+    </dependency>
+    -->
+    <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>kogito-addons-quarkus-tracing-decision</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>kogito-addons-quarkus-monitoring-prometheus</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>kogito-quarkus-test-utils</artifactId>
+      <version>${version.org.kie.kogito}</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy</artifactId>
